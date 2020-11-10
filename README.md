@@ -1,0 +1,1 @@
+# NG_2020_Krivokhizha_Vitalya
