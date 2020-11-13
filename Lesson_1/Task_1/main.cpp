@@ -1,9 +1,8 @@
 #include <iostream>
 
 using namespace std;
-
 int main()
 {
-    cout << "Hello world!" << endl;
+    cout << "Vitalya" << endl <<"Krivokhizha";
     return 0;
 }
