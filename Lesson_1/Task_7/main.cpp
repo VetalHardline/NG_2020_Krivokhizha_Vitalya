@@ -6,11 +6,11 @@ int main()
 {
     int b;
     cout << "VVedite chislo: ";
-cin >> b;
+    cin >> b;
 
-    for(int a=0; a<=b; a++){
+    for (int a=0; a<=b; a++)
+    {
     cout << a <<';';
-}
-
+    }
     return 0;
 }
