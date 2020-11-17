@@ -8,7 +8,7 @@ int main()
     cout << "VVedite chislo: ";
     cin >> b;
 
-    for (a=0; a < b; a++)
+    for (a = 0; a < b; a++)
     {
     cout << a <<',';
     }
