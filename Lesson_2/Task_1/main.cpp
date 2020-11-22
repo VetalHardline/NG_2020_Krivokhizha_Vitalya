@@ -18,11 +18,11 @@ int main()
 
     for(int num = 0; num < 10; num++)
     {
-    if(array[num] == mySchool)
+        if(array[num] == mySchool)
         {
-        cout << "ya znayu ety shkolu";
-        proverka = 1;
-        break;
+            cout << "ya znayu ety shkolu";
+            proverka = 1;
+            break;
         }
     }
 
@@ -30,4 +30,3 @@ int main()
         cout << "k sozheleniyu ya ne znau ety shkolu!";
     }
 }
-
