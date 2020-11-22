@@ -35,5 +35,4 @@ int main()
         output++;
     }
     cout << "*";
-    output = 1;
 }
