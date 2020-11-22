@@ -20,23 +20,23 @@ int main()
         cout << "Vvedite nomer kartochki: ";
         cin >> num;
         if (num > 0 && num < 11){
-        cout << "skolko polozhit deneg? ";
-        cin >> money;
-        card[num - 1] += money;
+            cout << "skolko polozhit deneg? ";
+            cin >> money;
+            card[num - 1] += money;
 
-        for (int j = 0; j < 10; j++)
-        {
-            cout << card[j] << " ";
-        }
+            for (int j = 0; j < 10; j++)
+            {
+                cout << card[j] << " ";
+            }
 
-        cout << endl;
-        cout << "v summe na vsex kartochkah - ";
-        allMoney = allMoney + money;
-        cout << allMoney;
-        cout << endl;
+            cout << endl;
+            cout << "v summe na vsex kartochkah - ";
+            allMoney = allMoney + money;
+            cout << allMoney;
+            cout << endl;
         }
-    else{
-        cout << "takoi kartochki ne znayu" << endl;
+        else{
+            cout << "takoi kartochki ne znayu" << endl;
+        }
     }
-}
 }
