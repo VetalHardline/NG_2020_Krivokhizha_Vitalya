@@ -45,7 +45,6 @@ int main()
     }
     cout<<endl;
     for (int j = 0; j < objectSize; j++) {
-        for (int i = 0; i < objectSize; i++);
         for (int i = 0; i < j+1; i++)
             cout << "*";
         cout << endl;
