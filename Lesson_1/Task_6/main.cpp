@@ -45,14 +45,11 @@ int main()
     }
     cout<<endl;
 
-    for (int i = objectSize; i > 0; i--)
-    {
-        for (int j = 0; j < objectSize - i; j++)
-        {
+    for (int i = objectSize; i > 0; i--){
+        for (int j = 0; j < objectSize - i; j++){
             cout << " ";
         }
-        for (int j = 0; j < i; j++)
-        {
+        for (int j = 0; j < i; j++){
             cout << "*";
         }
 
