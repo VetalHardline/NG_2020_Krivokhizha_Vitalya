@@ -4,27 +4,21 @@ using namespace std;
 
 int main()
 {
-    int num[20];
+    const int Size = 20;
+    int arr[Size];
     int maxSize = 0;
-    int shos;
-    int i;
+    int i = 0;
 
-    for(int i=0;i<20;i++){
+    while(i < Size && arr[i]!=0)
+    {
         cout << "Enter number: ";
-        cin >> num[i];
-        if(num[i] > maxSize)
-            maxSize = num[i];
-        if(num[i] == 0) break;
+        cin >> arr[i];
+        cout << arr[i];
+        i++;
     }
-    for(i = 0; i < 20; i++){
-        for(shos = 0; shos < (maxSize - num[i])/2; shos++){
-            cout << " ";
-        }
-        for(int q=0; q<num[i]; q++){
-            cout << "*";
-        }
-        cout << endl;
-        if(num[i] == 0) break;
-    }
-    cout << endl;
+
+
+
+
+
 }
