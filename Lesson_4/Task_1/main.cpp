@@ -2,13 +2,13 @@
 
 using namespace std;
 
-void vivesticarti(int card[])
+/*void vivesticarti(int card[])
 {
    for (int j = 0; j < 10; j++)
     {
         cout << card[j] << " ";
     }
-}
+}*/
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     int card[10]{}, money, allMoney;
     money = 0;
     allMoney = 0;
-/*
+
     while (true)
     {
         cout << "Vvedite nomer kartochki: ";
@@ -40,6 +40,6 @@ int main()
         else{
             cout << "takoi kartochki ne znayu" << endl;
         }
-    }*/
-    vivesticarti(card);
+    }
+   // vivesticarti(card);
 }

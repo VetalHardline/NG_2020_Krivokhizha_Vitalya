@@ -4,25 +4,19 @@ using namespace std;
 
 int main()
 {
-    int card[10], money, allMoney, nolik, num;
+        int Size=10;
+    int card[10]{}, money, allMoney;
     money = 0;
     allMoney = 0;
-    nolik = 0;
-    num = 0;
 
-    for (int num = 0; num < 10; num++)
-    {
-        card[num] = 0;
-    }
-
-    while (nolik < 10)
+    while (true)
     {
         cout << "Vvedite nomer kartochki: ";
-        cin >> num;
-        if (num > 0 && num < 11){
+        cin >> Size;
+        if (Size > 0 && Size < 11){
             cout << "skolko polozhit deneg? ";
             cin >> money;
-            card[num - 1] += money;
+            card[Size - 1] += money;
 
             for (int j = 0; j < 10; j++)
             {
