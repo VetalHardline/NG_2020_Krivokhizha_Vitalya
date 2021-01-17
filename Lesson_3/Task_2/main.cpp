@@ -9,26 +9,21 @@ int main()
     int dlinaSlova = 0;
     int maxPos = 0;
     int maxDlina = 0;
+
     cout << "Enter string: ";
     cin.getline(stroka, 255);
 
-    for(int i=0; stroka[i+1] != '\0';i++)
+    for(int element = 0; stroka[element+1] != '\0'; element++)
     {
-        if (stroka[i]>='a' && stroka[i] <= 'z')
+        if ((stroka[element] >= 'a' && stroka[element] <= 'z') || (stroka[element] >= 'A' && stroka[element] <= 'Z'))
         {
-            nachaloSlova = i;
-            dlinaSlova = nachaloSlova;
+            nachaloSlova = element;
+            dlinaSlova = 0;
 
-            while(stroka[i]>='a' && stroka[i] <= 'z')
+            while ((stroka[element] >= 'a' && stroka[element] <= 'z') || (stroka[element] >= 'A' && stroka[element] <= 'Z'))
             {
                 dlinaSlova++;
-                i++;
-            }
-
-            while (stroka[nachaloSlova]<stroka[dlinaSlova])
-            {
-                cout << stroka[nachaloSlova];
-                nachaloSlova++;
+                element++;
             }
 
             if(maxDlina < dlinaSlova)
@@ -36,11 +31,18 @@ int main()
                 maxDlina = dlinaSlova;
                 maxPos = nachaloSlova;
             }
-            cout << endl;
+
         }
 
     }
+    cout << "Result: ";
 
+    int elementSamogoBolshogoSlova = maxPos;
 
+    while (elementSamogoBolshogoSlova < maxPos + maxDlina)
+    {
+        cout << stroka[elementSamogoBolshogoSlova];
+        elementSamogoBolshogoSlova++;
+    }
 
 }
