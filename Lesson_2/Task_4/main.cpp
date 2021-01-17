@@ -7,25 +7,25 @@ int main()
     const int Size=5;
     int arr[Size];
     int maxSize = 0;
-    int k = 0;
+    int zvezdochki = 0;
 
-    for(int i = 0; i < Size; i++)
+    for(int elem = 0; elem < Size; elem++)
     {
-        k++;
-        cout << "zvezdochek v " << k << " stolbike:" << endl;
-        cin >> arr[i];
+        zvezdochki++;
+        cout << "zvezdochek v " << zvezdochki << " stolbike:" << endl;
+        cin >> arr[elem];
 
-        if(maxSize < arr[i])
+        if(maxSize < arr[elem])
         {
-            maxSize = arr[i];
+            maxSize = arr[elem];
         }
     }
 
-    for (int i = 0; i <= maxSize; i++)
+    for (int elem = 0; elem <= maxSize; elem++)
     {
-        for(int j = 0; j < Size; j++)
+        for(int elemvnutrenigocikla = 0; elemvnutrenigocikla < Size; elemvnutrenigocikla++)
         {
-            if(arr[j] - i > 0)
+            if(arr[elemvnutrenigocikla] - elem > 0)
             {
                 cout << "*";
             }
