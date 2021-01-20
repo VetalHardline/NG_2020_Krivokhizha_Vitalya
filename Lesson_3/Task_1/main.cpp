@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     char stroka[255];
-    int kolichestvoslov = 0;
+    int kolichestvoslov = 1;
 
     cout << "Enter string: ";
     cin.getline(stroka, 255);
