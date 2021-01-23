@@ -12,9 +12,10 @@ int main()
 
     for(int elem = 0; stroka[elem + 1] != '\0'; elem++)
     {
-        if(((stroka[elem] >= 'a' && stroka[elem] <= 'z') && !(stroka[elem + 1] >= 'a' && stroka[elem + 1] <= 'z')) || ((stroka[elem] >= 'A' && stroka[elem] <= 'Z') && !(stroka[elem + 1] >= 'A' && stroka[elem + 1] <= 'Z')))
-        {
-            kolichestvoslov++;
+        if((stroka[elem] >= 'a' && stroka[elem] <= 'z') || (stroka[elem] >= 'A' && stroka[elem] <= 'Z')){
+            if(!(stroka[elem + 1] >= 'a' && stroka[elem + 1] <= 'z') && !(stroka[elem + 1] >= 'A' && stroka[elem + 1] <= 'Z')){
+                kolichestvoslov++;
+            }
         }
     }
 
