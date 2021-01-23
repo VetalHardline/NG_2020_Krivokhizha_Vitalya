@@ -12,17 +12,12 @@ int main()
 
     for(int elem = 0; stroka[elem] != '\0'; elem++)
     {
-        if(stroka[elem] >= 97 && stroka[elem] <= 122)
+        if(stroka[elem] >= 'a' && stroka[elem] <= 'z')
         {
             stroka[elem] = stroka[elem] - 32;
         }
-    }
-
-    for(int elem = 0; stroka[elem] != '\0'; elem++)
-    {
         cout << stroka[elem];
     }
-
 
 
 }
