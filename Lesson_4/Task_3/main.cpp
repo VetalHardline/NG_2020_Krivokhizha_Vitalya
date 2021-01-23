@@ -2,7 +2,7 @@
 
 using namespace std;
 
- int kolichestvoslov = 1;
+int kolichestvoslov = 1;
 
 void vveditestroku(char *stroka)
 {
@@ -10,19 +10,20 @@ void vveditestroku(char *stroka)
     cin.getline(stroka, 255);
 }
 
-void iff(char *stroka, int elem)
+void uslovie(char *stroka, int elem)
 {
-    if((stroka[elem] >= 'a' && stroka[elem] <= 'z') && !(stroka[elem + 1] >= 'a' && stroka[elem + 1] <= 'z'))
-        {
+    if((stroka[elem] >= 'a' && stroka[elem] <= 'z') || (stroka[elem] >= 'A' && stroka[elem] <= 'Z')){
+        if(!(stroka[elem + 1] >= 'a' && stroka[elem + 1] <= 'z') && !(stroka[elem + 1] >= 'A' && stroka[elem + 1] <= 'Z')){
             kolichestvoslov++;
         }
+    }
 }
 
-void ciklfor(char *stroka, int elem)
+void WordsCounter(char *stroka, int elem)
 {
     for(int elem = 0; stroka[elem + 1] != '\0'; elem++)
     {
-        iff(stroka, elem);
+        uslovie(stroka, elem);
     }
 }
 
@@ -36,6 +37,6 @@ int main()
     char stroka[255];
     int elem = 0;
     vveditestroku(stroka);
-    ciklfor(stroka, elem);
+    WordsCounter(stroka, elem);
     Result();
 }
