@@ -7,12 +7,10 @@ int main()
     const int Size=5;
     int arr[Size];
     int maxSize = 0;
-    int zvezdochki = 0;
 
     for(int elem = 0; elem < Size; elem++)
     {
-        zvezdochki++;
-        cout << "zvezdochek v " << zvezdochki << " stolbike:" << endl;
+        cout << "zvezdochek v " << elem << " stolbike:" << endl;
         cin >> arr[elem];
 
         if(maxSize < arr[elem])
