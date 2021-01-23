@@ -15,8 +15,11 @@ int main()
         cin >> arr[element];
 
         if(arr[element] > maxSize)
-        maxSize = arr[element];
+        {
+            maxSize = arr[element];
+        }
         element++;
+
     } while(element < Size && arr[element - 1] != 0);
 
     for(int element = 0; element < 20; element++){
