@@ -2,15 +2,13 @@
 
 using namespace std;
 
-int kolichestvoslov = 1;
-
 void vveditestroku(char *stroka)
 {
     cout << "Enter string: ";
     cin.getline(stroka, 255);
 }
 
-void uslovie(char *stroka, int elem)
+void uslovie(char *stroka, int elem, int &kolichestvoslov)
 {
     if((stroka[elem] >= 'a' && stroka[elem] <= 'z') || (stroka[elem] >= 'A' && stroka[elem] <= 'Z')){
         if(!(stroka[elem + 1] >= 'a' && stroka[elem + 1] <= 'z') && !(stroka[elem + 1] >= 'A' && stroka[elem + 1] <= 'Z')){
@@ -19,15 +17,15 @@ void uslovie(char *stroka, int elem)
     }
 }
 
-void WordsCounter(char *stroka, int elem)
+void WordsCounter(char *stroka, int elem, int &kolichestvoslov)
 {
     for(int elem = 0; stroka[elem + 1] != '\0'; elem++)
     {
-        uslovie(stroka, elem);
+        uslovie(stroka, elem, kolichestvoslov);
     }
 }
 
-void Result()
+void Result(int kolichestvoslov)
 {
     cout << "Result: " << kolichestvoslov;
 }
@@ -36,7 +34,8 @@ int main()
 {
     char stroka[255];
     int elem = 0;
+    int kolichestvoslov = 1;
     vveditestroku(stroka);
-    WordsCounter(stroka, elem);
-    Result();
+    WordsCounter(stroka, elem, kolichestvoslov);
+    Result(kolichestvoslov);
 }
