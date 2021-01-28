@@ -3,4 +3,7 @@
 *.layout
 *.cbp
 *.depend
+*.pro
+*.pro.user
+*/build*
 
