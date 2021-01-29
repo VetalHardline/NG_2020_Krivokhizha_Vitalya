@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
-#include "videocard.h"
-#include "procesori.h"
 #include "matplata.h"
+#include "procesori.h"
+#include "videocard.h"
 
 using namespace std;
 
@@ -11,11 +11,28 @@ class computer
 public:
     computer();
 
+    void setMaterPlata(matPlata newMaterPlata) { materPlata = newMaterPlata; }
+    matPlata getMaterPlata() { return materPlata; }
+
+
+    void setVideocarta(videocard newVideocarta) { videocarta = newVideocarta; }
+    videocard getVideocarta() { return videocarta;}
+
+    void setProcik(procesori newProcik) { procik = newProcik; }
+    procesori getProcik() { return procik; }
+
+    double priceKomponents();
+
+
+    void infoPK();
+
+    void proverkaSocketov();
 
 private:
-    int materPlata;
-    int videokarta;
-    int procik;
+
+    matPlata materPlata;
+    videocard videocarta;
+    procesori procik;
 };
 
 
