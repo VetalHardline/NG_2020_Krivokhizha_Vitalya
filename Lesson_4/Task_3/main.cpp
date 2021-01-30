@@ -19,7 +19,7 @@ void uslovie(char *stroka, int elem, int &kolichestvoslov)
 
 void WordsCounter(char *stroka, int elem, int &kolichestvoslov)
 {
-    for(int elem = 0; stroka[elem + 1] != '\0'; elem++)
+    for(int elem = 0; stroka[elem] != '\0'; elem++)
     {
         uslovie(stroka, elem, kolichestvoslov);
     }
@@ -34,7 +34,7 @@ int main()
 {
     char stroka[255];
     int elem = 0;
-    int kolichestvoslov = 1;
+    int kolichestvoslov = 0;
     vveditestroku(stroka);
     WordsCounter(stroka, elem, kolichestvoslov);
     Result(kolichestvoslov);
