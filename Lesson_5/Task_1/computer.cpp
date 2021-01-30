@@ -12,10 +12,10 @@ double computer::priceKomponents()
 
 void computer::infoPK()
 {
-    cout << "Procik : " << procik.getName() << ", proizvoditel " << procik.getProizvoditel() << "\t" << procik.getPokolenie() << " MHz" << "\t" << procik.getChastota() << " chastota\tee cena "<< procik.getPrice()<< "$\t" << procik.getSocket() << endl << endl;
-    cout << "Videocard: " << videocarta.getName() << "\t ee cena " << videocarta.getPrice() << "$\t\tSeriya: " << videocarta.getSeries() << "\t" << videocarta.getPopugai() << " Popugaev" << endl << endl;
-    cout << "Motherboard: " << materPlata.getProizvoditel() << " proizvoditel\tModel: " << materPlata.getModel() << "\tee cena " << materPlata.getPrice() << "$\tSocket: " << materPlata.getSocket() << " Socket" << endl << endl;
-    cout << "Polnaya stoimost computera: " << priceKomponents() << "$\n\n\n\n";
+    cout << "Procik : " << procik.getName() << ", proizvoditel " << procik.getProizvoditel() << "\t" << procik.getPokolenie() << " MHz" << "\t" << procik.getChastota() << " chastota\tee cena "<< procik.getPrice()<< "$\t" << procik.getSocket() << endl;
+    cout << "Videocard: " << videocarta.getName() << "\t ee cena " << videocarta.getPrice() << "$\t\tSeriya: " << videocarta.getSeries() << "\t" << videocarta.getPopugai() << " Popugaev" << endl;
+    cout << "Motherboard: " << materPlata.getProizvoditel() << " proizvoditel\tModel: " << materPlata.getModel() << "\tee cena " << materPlata.getPrice() << "$\tSocket: " << materPlata.getSocket() << " Socket" << endl;
+    cout << "Polnaya stoimost computera: " << priceKomponents() << "$\n\n\n";
 }
 
 void computer::proverkaSocketov()
