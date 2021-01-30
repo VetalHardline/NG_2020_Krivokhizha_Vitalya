@@ -9,15 +9,20 @@ int main()
     cout << "Enter string: ";
     cin.getline(stroka, 255);
 
+    char malenkayaBukva = 0;
 
     for(int elem = 0; stroka[elem] != '\0'; elem++)
     {
         if(stroka[elem] >= 'a' && stroka[elem] <= 'z')
         {
-            stroka[elem] = stroka[elem] - 32;
+            malenkayaBukva = stroka[elem];
+            malenkayaBukva -= 32;
+            cout << malenkayaBukva;
+        }else{
+            cout << stroka[elem];
         }
-        cout << stroka[elem];
     }
 
 
 }
+
