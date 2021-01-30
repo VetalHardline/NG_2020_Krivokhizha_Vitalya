@@ -18,9 +18,9 @@ kalkulator::~kalkulator()
 
 void kalkulator::resultatNazhatia()
 {
-    int a, b;
-    a = ui->chislo1->value();
-    b = ui->chislo2->value();
-    ui->resultat->setValue(a + b);
+    int userNumber1, userNumber2;
+    userNumber1 = ui->chislo1->value();
+    userNumber2 = ui->chislo2->value();
+    ui->resultat->setValue(userNumber1 + userNumber2);
 }
 
